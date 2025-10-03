@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина ФВС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <div class="logo-text">ФВС</div>
+            <h1>Викторина Факультета</h1>
+            <p>Проверьте свои знания в области вычислительных систем!</p>
+            <button id="start-button" class="main-button">Начать игру!</button>
+        </div>
+        <div id="quiz-screen" class="screen hidden">
+            <h2 id="question-counter"></h2>
+            <div class="progress-bar">
+                <div id="progress-bar-inner" class="progress-bar-inner"></div>
+            </div>
+            <img id="question-image" class="question-image" alt="Иллюстрация к вопросу">
+            <h3 id="question-text"></h3>
+            <div id="options-grid" class="options-grid"></div>
+        </div>
+        <div id="end-screen" class="screen hidden">
+            <h1>Викторина завершена!</h1>
+            <h2>Ваш результат:</h2>
+            <p id="final-score" style="font-size: 5rem; font-weight: bold; color: var(--primary-color);"></p>
+            <div class="qr-codes-container">
+                <div class="qr-code-item">
+                    <p>Подписывайся на нашу группу ВК "Учись на ФВС!"</p>
+                    <img id="vk-qr" src="images/qr_vk.jpg" alt="QR-код для группы ВК 'Учись на ФВС!'">
+                </div>
+                <div class="qr-code-item">
+                    <p>Заполни анкету, чтобы принимать участие в наших мероприятих!</p>
+                    <img id="questionnaire-qr" src="images/qr-code.png" alt="QR-код для анкеты">
+                </div>
+            </div>
+            <button id="restart-button" class="main-button">Попробовать снова</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
